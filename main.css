@@ -1,0 +1,110 @@
+
+/* Estilos para Navegador*/
+
+nav{
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    padding: 1px;
+    margin: 1px;
+       
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+     
+    }
+
+#menu li a{
+    padding: 20px;
+    margin: 2px; 
+    color: white;
+}
+
+.navegacion ul, li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+td{
+    text-align: center;}
+
+   
+li:hover a {
+	background: darkgrey;
+}
+
+/* estilos del estado hover del dropdown*/
+li:hover ul a:hover {
+	background: darkgray;
+	color: #fff;
+}
+
+/* Aparace el dropdown en hover
+ul li a:hover {
+	display: none;
+}
+/* Estilo de .muestra-menu */
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: 
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+    transition:all 0.5s ease;
+}
+
+
+/*Oculta el checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/* muestra el menu cuando el checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/* estilos responsive */
+
+@media screen and (max-width : 760px){
+	
+	#menu {
+		position: static;
+		display: none;
+	}
+	
+	li {
+		margin-bottom: 3px;
+	}
+	
+	ul li {
+		width: 100%;
+	}
+	
+	.show-menu {
+		display:block;
+	}
+} 
