@@ -27,7 +27,7 @@ nav{
      
     }
 
-#menu li a{
+#menu li a {
     padding: 20px;
     margin: 2px; 
     color: white;
@@ -57,6 +57,7 @@ ul li a:hover {
 	display: none;
 }
 /* Estilo de .muestra-menu */
+
 .show-menu {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
@@ -75,19 +76,17 @@ ul li a:hover {
     transition:all 0.5s ease;
 }
 
-
-/*Oculta el checkbox*/
 input[type=checkbox]{
     display: none;
 }
 
-/* muestra el menu cuando el checkbox is checked*/
+
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
 
-/* estilos responsive */
+/* estilos responsive para navegador */
 
 @media screen and (max-width : 760px){
 	
@@ -96,15 +95,103 @@ input[type=checkbox]:checked ~ #menu{
 		display: none;
 	}
 	
-	li {
+	#menu,li {
 		margin-bottom: 3px;
 	}
 	
-	ul li {
+	#menu ul li {
 		width: 100%;
 	}
 	
 	.show-menu {
 		display:block;
 	}
+
+    #menu {
+        font-size: 16px;
+         
+        }
+    
+    #menu li a{
+        padding: 14px;
+       
 } 
+
+/*Estilo para area de servicios*/
+
+#servicios{
+    background-color: rgb(185, 31, 31);
+    font-family: sans-serif;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    max-width: 10px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/*#guia_inferior{
+    margin: 0%  ;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+.slider{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+    
+    }
+
+.slider li{
+    position: absolute;
+    opacity: 0 ;
+    max-width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity 0.5s;
+}
+
+.slider li:target{
+    opacity: 1;
+}
+
+
+.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.slider li:first-child{
+    opacity: 1;
+}
+
+#guia_inferior{
+    text-align: center;
+    margin: 20px;
+}
+
+#guia_inferior li{
+    display: inline-block;
+    text-align: center;
+    }
+
+#guia_inferior li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 80px;
+    height: 15px;
+    font-size: 15px;
+    border-radius: 50%;
+}
+ul#guia_inferior li a:hover{
+    background-color: beige;
+    color: black;
+}
+
