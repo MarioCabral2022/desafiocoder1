@@ -4,23 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../novedades.css">
     <title>Novedades</title>
 </head>
 <body>
-    
-    <nav class="navegacion">
-        <label for="show-menu" class="show-menu">Mostrar Menu</label>
-	    <input type="checkbox" id="show-menu" role="button">    
-        <ul id="menu">
-           <li><a href="../index.html">Portada</a></li>
-           <li><a href="empresa.html">Nosotros </a></li>
-           <li><a href="servicios.html">Servicios</a></li>              
-           <li><a href="novedades.html">Novedades</a></li>
-           <li><a href="contacto.html">Contacto</a></li>
-       </ul>
-   </nav>    
+    <div class="grilla">
 
+        <nav class="navegacion">
+            <label for="show-menu" class="show-menu">Mostrar Menu</label>
+	        <input type="checkbox" id="show-menu" role="button">    
+            <ul id="menu">
+                 <li><a href="../index.html">Portada</a></li>
+                 <li><a href="empresa.html">Nosotros </a></li>
+                 <li><a href="servicios.html">Servicios</a></li>              
+                 <li><a href="novedades.html">Novedades</a></li>
+                 <li><a href="contacto.html">Contacto</a></li>
+             </ul>
+         </nav>    
 
+        <main class="noticia">
+            <div class="row">
+                 <div class="card">
+                 <span>    
+                    <div class="wrapper">
+                         <div class="date">
+                             <span class="day">12</span>
+                             <span class="month">Aug</span>
+                              <span class="year">2016</span>
+                        </div>
+                         <div class="data">
+                             <div class="content">
+                                 <span class="author">Jane Doe</span>
+                                 <h1 class="title"><a href="#">Tribunal de apelacion falla a favor de Portero por USD 350.000</a></h1>
+                                 <span id="read_more"><a href="#">Fallo Judicial</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </span>    
+                </div>
+            <div class="card">
+                <span>
+                    <div class="wrapper">
+                            <div class="date">
+                                 <span class="day">12</span>
+                                 <span class="month">Aug</span>
+                                 <span class="year">2016</span>
+                            </div>
+
+                            <div class="data">
+                                <div class="content">
+                                    <span class="author">Jane Doe</span>
+                                    <h1 class="title"><a href="#">Stranger Things: The sound of the Upside Down</a></h1>
+                                    <a href="#" class="button">Read more</a>
+                                </div>
+                           </div>
+                    </div>
+                </div>
+            </span>    
+            </div>
+        </main>
+    </div>
 </body>
 </html>
